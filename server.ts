@@ -9,10 +9,13 @@ const openai = new OpenAI({
 
 const port = 3001;
 createServer(async (req, res) => {
+  console.log("req.url ", req.url);
+
   const url = new URL(req.url!, "file:///");
-  // console.log('url.pathname ', url.pathname)
+  console.log("url ", url, "url.pathname ", url.pathname);
+
   const query = Object.fromEntries(url.searchParams.entries());
-  // console.log('query ', query)
+  console.log("query ", query);
 
   if (url.pathname === "/") {
     // 首页路由，返回 index.html
