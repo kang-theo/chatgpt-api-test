@@ -32,3 +32,11 @@ Stream and Server-sent events
 1. Define a new `EventSource(url)` instance.
 2. Listen for `onmessage` events and display the messages on the frontend.
 3. Send requests to the `/chat` route.
+
+## Prompt
+
+[Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering)
+
+- System Message: Sets the initial conditions and instructions for the conversation.
+- User Messages: Drive the interaction with questions, commands, or comments.
+- Assistant Messages: Provide responses, adhering to the context and rules defined by the system message.
